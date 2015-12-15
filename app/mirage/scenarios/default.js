@@ -6,5 +6,6 @@ export default function(server) {
   */
 
   server.create('recipe', {ingredients: [1, 2, 3, 4, 5, 6]});
-  server.createList('ingredient', {recipe: 1});
+  server.create('ingredient', {recipe: 1, quantity: 2, name: 'Chicken Livers', unit: 'pounds'});
+  server.createList('ingredient', 5, {recipe: 1});
 }

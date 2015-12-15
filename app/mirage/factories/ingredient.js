@@ -14,6 +14,6 @@ export default Mirage.Factory.extend({
   },
 
   quantity() {
-    return faker.number(0, 4);
+    return faker.random.number(0, 4);
   },
 });
